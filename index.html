@@ -3,26 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome Page</title>
+  <title>Login Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .login-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 30px;
       text-align: center;
-      padding: 50px;
     }
-    h1 {
-      color: #4CAF50;
-      font-size: 3em;
-    }
-    p {
+    
+    .login-container h2 {
+      font-size: 24px;
       color: #333;
-      font-size: 1.2em;
+      margin-bottom: 20px;
     }
+    
+    .input-group {
+      margin-bottom: 15px;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .input-group input:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+    
+    .forgot-password {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Welcome to Our Website!</h1>
-  <p>We are glad to have you here. Enjoy exploring!</p>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" method="POST">
+      <div class="input-group">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+    </form>
+  </div>
+
 </body>
 </html>
